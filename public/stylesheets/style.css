@@ -1,0 +1,44 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+a#title {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+}
+
+#header__logo__container {
+  padding: 200px;
+}
+
+#header__logo {
+  width: 500px;
+}
+
+div.col-md-6 {
+  padding: 100px;
+}
+
+div#header__container {
+  background: #c9d6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e2e2e2,
+    #c9d6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e2e2e2,
+    #c9d6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a#numberbar__a {
+  font-size: 0.7em;
+  color: white;
+}
