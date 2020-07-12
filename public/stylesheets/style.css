@@ -13,7 +13,10 @@ a#title {
 }
 
 #header__logo__container {
-  padding: 200px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #header__logo {
