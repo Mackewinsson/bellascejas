@@ -3,8 +3,10 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+a,
+a:hover {
   color: #00b7ff;
+  text-decoration: none;
 }
 
 a#title {
@@ -44,4 +46,9 @@ div#header__container {
 a#numberbar__a {
   font-size: 0.7em;
   color: white;
+}
+
+div#card__featured {
+  border-color: #00b7ff;
+  border-width: 0.3em;
 }
