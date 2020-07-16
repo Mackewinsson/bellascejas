@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <% include partials/allpages/head %>
+  <body>
+    <!-- prettier-ignore -->
+    <% include partials/allpages/numberbarlp %>
+    <div class="row bg-dark text-light">
+      <div class="col-md-12 p-5 text-center">
+        <h2>CURSO DE MICROBLADING</h2>
+        <h5>Yulexi Marquez</h5>
+      </div>
+    </div>
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-7 text-center">
+          <h4 class="mb-4">👇 Lo que dicen de nosotros 👇</h4>
+          <div class="row">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/_YMCugve7bM"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            debitis omnis unde quas dolorem provident consectetur reiciendis
+            repellendus ipsum temporibus pariatur doloremque eveniet molestias.
+          </p>
+        </div>
+        <div class="col-md-5 text-center">
+          <h4 class="mb-4">Multiples modalidades para elegir</h4>
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Modalidad</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Lugar</th>
+                <th scope="col">Horario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- prettier-ignore -->
+              <% for(let curso of cursos){ %>
+              <tr>
+                <td><%= curso.nombre %></td>
+                <td><%= curso.fecha %></td>
+                <td><%= curso.lugar %></td>
+                <td><%= curso.horario %></td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+          <a href="#">
+            <button type="button" class="btn btn-primary btn-lg">
+              Inscribete ahora
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- SECCION -->
+    <!-- PARA QUIEN ES -->
+    <div class="row align-items-center p-5">
+      <div class="col-md-6 text-center pt-5">
+        <img
+          src="images/curso_microblading_3.jpg"
+          class="img-fluid"
+          alt="kits"
+        />
+      </div>
+      <div class="col-md-6 pt-5 text-center">
+        <h3 class="titles text-left">
+          ¿Para quien es este curso?
+          <i class="fas fa-check-double"></i>
+        </h3>
+        <ul class="mt-4 text-left mb-5">
+          <li>
+            Emprendedoras y emprendedores que quieran aprender un oficio
+            lucrativo y GANAR DINERO.
+          </li>
+          <li>
+            Profesionales de la belleza que quieran ampliar sus conocimientos.
+          </li>
+          <li>
+            Personas que quieren aprender nuevas tendencias del maquillaje
+            permanente.
+          </li>
+        </ul>
+        <a href="#">
+          <button type="button" class="btn btn-primary btn-lg btn-block">
+            Matricula abierta
+          </button>
+        </a>
+      </div>
+    </div>
+    <!-- QUE APRENDERAS -->
+    <div class="row align-items-center bg-light p-5">
+      <div class="col-md-6 pt-5 text-center">
+        <h3 class="titles text-left">
+          ¿Qué aprenderas? <i class="fas fa-user-graduate" id="big-icon"></i>
+        </h3>
+        <ul class="mt-4 text-left mb-5">
+          <li>Microblading técnica pelo a pelo.</li>
+          <li>Microblading técnica shadow.</li>
+          <li>Bioseguridad y asepsia.</li>
+          <li>Diseño de cejas desde cero.</li>
+          <li>Colorimetria para pigmentación de cejas.</li>
+          <li>Materiales</li>
+          <li>Pigmentos utilizados</li>
+          <li>Marco teorico</li>
+          <li>Cuanto cobrar por tus servicios.</li>
+          <li>Marketing basico de servicios.</li>
+        </ul>
+        <a href="#">
+          <button type="button" class="btn btn-primary btn-lg btn-block">
+            Contactanos
+          </button>
+        </a>
+      </div>
+      <div class="col-md-6 pt-5 text-center">
+        <img
+          src="images/curso_microblading_2.jpg"
+          class="img-fluid"
+          alt="kits"
+        />
+      </div>
+    </div>
+    <!-- KIT INCLUIDO -->
+    <div class="row align-items-center p-5">
+      <div class="col-md-6 text-center pt-5" id="kits__image">
+        <img
+          src="images/curso_microblading_1.jpg"
+          class="img-fluid"
+          alt="kits"
+        />
+      </div>
+      <div class="col-md-6 pt-5 text-center">
+        <h3 class="titles text-left">
+          ¿Qué incluye el kit? <i class="fas fa-gift" id="big-icon"></i>
+        </h3>
+        <ul class="mt-4 text-left mb-5">
+          <li>Microblading técnica pelo a pelo.</li>
+          <li>Anillos portapigmentos</li>
+          <li>Pigmento PCD</li>
+          <li>Microagujas</li>
+          <li>Tebori o plumilla</li>
+          <li>Piel sintética</li>
+          <li>Lápiz dematografico</li>
+          <li>Pie de metro</li>
+          <li>Bata desechable</li>
+          <li>Guantes</li>
+          <li>Gorro</li>
+          <li>Mascarilla</li>
+          <li>Corta cartón</li>
+          <li>Hilo</li>
+          <li>Microaplicador</li>
+          <li>Consentimiento informado</li>
+          <li>Material escrito para soporte</li>
+        </ul>
+        <a href="#">
+          <button type="button" class="btn btn-primary btn-lg btn-block">
+            Comienza hoy
+          </button>
+        </a>
+      </div>
+    </div>
+    <!-- prettier-ignore -->
+    <% include partials/allpages/footer %> 
+    <% include partials/allpages/scripts %>
+  </body>
+</html>

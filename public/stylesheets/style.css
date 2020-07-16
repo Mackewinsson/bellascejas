@@ -3,6 +3,14 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+li {
+  font-size: 1.8em;
+}
+
+h3.titles {
+  font-size: 2em;
+  font-weight: bold;
+}
 a,
 a:hover {
   color: #00b7ff;
@@ -52,3 +60,11 @@ div#card__featured {
   border-color: #00b7ff;
   border-width: 0.3em;
 }
+
+i#big-icon {
+  font-size: 1em;
+}
+
+/* div#kits__image {
+}
+} */
