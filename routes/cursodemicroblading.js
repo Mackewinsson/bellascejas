@@ -33,5 +33,10 @@ router.get("/", function (req, res, next) {
     ],
   });
 });
+router.get("/gracias", function (req, res, next) {
+  res.render("cdmgracias", {
+    title: "Gracias - Curso de microblading",
+  });
+});
 
 module.exports = router;

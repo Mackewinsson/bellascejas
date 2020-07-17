@@ -2,6 +2,34 @@
 <html>
   <% include partials/allpages/head %>
   <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v7.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="1857075757890775"
+      theme_color="#6699cc"
+    ></div>
     <!-- prettier-ignore -->
     <% include partials/allpages/numberbarlp %>
     <div class="row bg-dark text-light">
@@ -21,7 +49,16 @@
               allowfullscreen
             ></iframe>
           </div>
+          <p class="text-justify mt-2">
+            📍El microblading es la técnica de maquillaje permanente mas
+            demandada y lucrativa en la actualidad. En este curso aprenderás la
+            técnica de microblading para la construcción parcial o total de
+            cejas pelo a pelo. Mediante un lenguaje ameno y cercano podrás ir
+            descubriendo cada una de las secciones de aprendizaje que hemos
+            diseñado especialmente para ti.
+          </p>
         </div>
+        <!-- TABLA -->
         <div class="col-12 text-center">
           <h4 class="mb-4">Multiples modalidades para elegir</h4>
           <div class="table-responsive-sm">
@@ -47,6 +84,9 @@
               </tbody>
             </table>
           </div>
+          <p>
+            **Para ver la tabla completa desliza hacia la derecha o izquierda**
+          </p>
           <a href="#">
             <button type="button" class="btn btn-primary btn-lg">
               Inscribete ahora
@@ -55,9 +95,10 @@
         </div>
       </div>
     </div>
+    <!-- TABLA END -->
     <!-- SECCION -->
     <!-- PARA QUIEN ES -->
-    <div class="row align-items-center p-5">
+    <div class="row align-items-center p-5 bg-dark text-light">
       <div class="col-12 text-center pt-5">
         <img
           src="images/curso_microblading_3.jpg"
@@ -84,7 +125,7 @@
           </li>
         </ul>
         <a href="#">
-          <button type="button" class="btn btn-primary btn-lg btn-block">
+          <button type="button" class="btn btn-success btn-lg btn-block">
             Matricula abierta
           </button>
         </a>
@@ -110,7 +151,7 @@
         </ul>
         <a href="#">
           <button type="button" class="btn btn-primary btn-lg btn-block">
-            Contactanos
+            Envianos un mensaje
           </button>
         </a>
       </div>
