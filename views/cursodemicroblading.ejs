@@ -206,35 +206,23 @@
       <div class="col-md-12 p-5 text-center">
         <h2 class="mb-5">Elige la modalidad y comienza hoy mismo</h2>
         <div class="card-deck mb-3 text-center">
+          <!-- prettier-ignore -->
+          <% for(let curso of cursos){ %>
           <div class="card mb-4 shadow-sm">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Online</h4>
+              <h4 class="my-0 font-weight-normal"><%= curso.nombre %></h4>
             </div>
             <div class="card-body d-flex flex-column">
               <h1 class="card-title pricing-card-title">
-                150.000 <small class="text-muted">CLP</small>
+                <%= curso.precio %> <small class="text-muted">CLP</small>
               </h1>
               <ul class="list-unstyled mt-3 mb-4 text-left">
+                <% curso.caracteristicas.forEach(element => { %>
                 <li>
                   <i class="fas fa-check"></i>
-
-                  12 hrs de video
+                  <%= element %>
                 </li>
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  10 Ejercicios practicos
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  Preguntas via correo electronico
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  Diploma de certificacion
-                </li>
+                <% }) %>
               </ul>
               <a
                 href="https://www.flow.cl/btn.php?token=ucz0siv"
@@ -247,134 +235,7 @@
               </a>
             </div>
           </div>
-          <div class="card mb-4 shadow-sm" id="card__featured">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Online PRO</h4>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h1 class="card-title pricing-card-title">
-                250.000 <small class="text-muted">CLP</small>
-              </h1>
-              <ul class="list-unstyled mt-3 mb-4 text-left">
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  12 hrs de video
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  10 Ejercicios practicos
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  Asesoria directa via Whatsapp y llamadas
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  Diploma de certificacion
-                </li>
-              </ul>
-              <a
-                href="https://www.flow.cl/btn.php?token=ag7rqm1"
-                target="_blank"
-                class="mt-auto"
-              >
-                <button type="button" class="btn btn-lg btn-block btn-primary">
-                  Inscribete ahora
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Grupal GOLD</h4>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h1 class="card-title pricing-card-title">
-                500.000 <small class="text-muted">CLP</small>
-              </h1>
-              <ul class="list-unstyled mt-3 mb-4 text-left">
-                <li>
-                  <i class="fas fa-check"></i>
-                  Curso online incluido
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-                  Dos dias de practicas presenciales con la profesora
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-                  Asesoria directa via whatsapp y llamadas
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-                  Minimo de 5 alumnas
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-                  Diploma de certificacion
-                </li>
-              </ul>
-              <a
-                href="https://www.flow.cl/btn.php?token=c9bqsi3"
-                target="_blank"
-                class="mt-auto"
-              >
-                <button type="button" class="btn btn-lg btn-block btn-primary">
-                  Inscribete ahora
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Personalizado GOLD</h4>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h1 class="card-title pricing-card-title">
-                800.000 <small class="text-muted">CLP</small>
-              </h1>
-              <ul class="list-unstyled mt-3 mb-4 text-left">
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  Curso online incluido
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  Dos dias de practicas presenciales con la profesora
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  Grupo reducido de maximo 2 alumnas
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  Asesoria directa via whatsapp y llamadas
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-
-                  Diploma de certificacion
-                </li>
-              </ul>
-              <a
-                href="https://www.flow.cl/btn.php?token=jgcrqva"
-                target="_blank"
-                class="mt-auto"
-              >
-                <button type="button" class="btn btn-lg btn-block btn-primary">
-                  Inscribete ahora
-                </button>
-              </a>
-            </div>
-          </div>
+          <% } %>
         </div>
         <img
           src="/images/logo_webpay_plus.svg"
