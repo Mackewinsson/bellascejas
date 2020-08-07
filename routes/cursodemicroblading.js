@@ -12,6 +12,7 @@ router.get("/", function (req, res, next) {
         fecha: "Acceso inmediato",
         lugar: "En linea",
         horario: "Tu elijes",
+        linkPago: "https://www.flow.cl/btn.php?token=ucz0siv",
         caracteristicas: [
           "12 hrs de video",
           "10 Ejercicios practicos",
@@ -25,6 +26,7 @@ router.get("/", function (req, res, next) {
         fecha: "Acceso inmediato",
         lugar: "En linea",
         horario: "Tu elijes",
+        linkPago: "https://www.flow.cl/btn.php?token=ag7rqm1",
         caracteristicas: [
           "12 hrs de video",
           "10 Ejercicios practicos",
@@ -38,6 +40,7 @@ router.get("/", function (req, res, next) {
         fecha: "Por reserva",
         lugar: "Sede Bellas Cejas",
         horario: "10am a 6pm",
+        linkPago: "https://www.flow.cl/btn.php?token=c9bqsi3",
         caracteristicas: [
           "Curso online incluido",
           "Dos dias de practicas presenciales con la profesora",
@@ -52,6 +55,7 @@ router.get("/", function (req, res, next) {
         fecha: "Por reserva",
         lugar: "Sede Bellas Cejas",
         horario: "10am a 6pm",
+        linkPago: "https://www.flow.cl/btn.php?token=jgcrqva",
         caracteristicas: [
           "Curso online incluido",
           "Dos dias de practicas presenciales con la profesora",
