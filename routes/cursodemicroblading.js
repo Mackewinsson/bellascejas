@@ -47,6 +47,7 @@ router.get("/", function (req, res, next) {
           "Asesoria directa via whatsapp y llamadas",
           "Minimo de 5 alumnas",
           "Diploma de certificacion",
+          "Materiales",
         ],
       },
       {
@@ -62,6 +63,7 @@ router.get("/", function (req, res, next) {
           "Asesoria directa via whatsapp y llamadas",
           "Maximo 2 alumnas",
           "Diploma de certificacion",
+          "Materiales",
         ],
       },
     ],
