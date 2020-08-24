@@ -17,7 +17,8 @@ router.get("/", function (req, res, next) {
           "12 hrs de video",
           "10 Ejercicios practicos",
           "Preguntas via correo electronico",
-          "Diploma de certificacion",
+          "Diploma de certificacion digital",
+          "Materiales se venden por separado",
         ],
       },
       {
@@ -31,7 +32,8 @@ router.get("/", function (req, res, next) {
           "12 hrs de video",
           "10 Ejercicios practicos",
           "Asesoria directa via Whatsapp y llamadas",
-          "Diploma de certificacion",
+          "Diploma de certificacion digital",
+          "Materiales se venden por separado",
         ],
       },
       {
