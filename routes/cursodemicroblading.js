@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
+// Arreglar botones
+
 /* GET users listing. */
 router.get("/", function (req, res, next) {
   res.status(200).render("cursodemicroblading", {
